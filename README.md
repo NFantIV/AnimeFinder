@@ -1,0 +1,2 @@
+# AnimeFinder
+I have decided to create an application that stores data about different anime’s that a user wants more information about. The application will store data on a new anime as well as retrieve data on an anime that exists in the library. The application will also include search, edit and delete functionality. I have chosen this application because of my love for anime. I also wanted to build a database that would extend out to people who love anime or people who want to get into anime for the first time.
