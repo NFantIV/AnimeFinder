@@ -1,0 +1,52 @@
+@model IEnumerable<CharacterListItem>
+
+@{
+    ViewData["Title"] = "Character Listing";
+
+}
+
+<h1>Character Listings </h1>
+@Html.ActionLink("Add A Character","Create","Character")
+<div class="row">
+    @foreach (var chara in Model)
+    {
+            <div class="col-md-4 col-xs-6 border-primary mb-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-12">
+                                <div class="card-header text-white bg-info">
+                                        <p class="card-text">
+                                            <h5 class="card-title">
+                                    @chara.Name
+                                            </h5>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="@chara.CharacterImageURL" height="180px" width="180px" alt="@chara.Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                            @* <p class="card-text">@chara.Name</p> *@
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card-footer ">
+                                        <p class="card-text">
+                                            <a class="btn btn-outline-primary float-right" asp-action="Details" asp-route-id="@chara.Id">
+                                                <i class="bi bi-eye-fill"></i> Show Details
+                                            </a>
+                                            <a class="btn btn-outline-primary float-right" asp-action="Edit" asp-route-id="@chara.Id">
+                                                <i class="bi bi-eye-fill"></i> Update Character
+                                            </a>
+                                            <a class="btn btn-outline-primary float-right" asp-action="Delete" asp-route-id="@chara.Id">
+                                                <i class="bi bi-eye-fill"></i> Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    }
+</div>

@@ -1,0 +1,55 @@
+@model IEnumerable<ShowListItem>
+
+    @{
+    ViewData ["Title"] = "Show Listing";
+
+}
+
+@Html.ActionLink("Add A Show","Create","Show")
+<h1>Show Listings </h1>
+<div class="row">
+    @foreach (var show in Model)
+    {
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-header text-white bg-info">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                    @show.Name
+                                </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="@show.ShowImageURL" height="250px" width="180px" alt="@show.Name">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">@show.Name</p>
+                            <p class="card-text"><b>Genre: </b>@show.Genre</p>
+                            <p class="card-text"><b>Where to Watch: </b>@show.WhereToWatch</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card-footer ">
+                            <p class="card-text">
+                                <a class="btn btn-outline-primary float-right" asp-action="Details" asp-route-id="@show.Id">
+                                    <i class="bi bi-eye-fill"></i> Show Details
+                                </a>
+                                <a class="btn btn-outline-primary float-middle" asp-action="Edit" asp-route-id="@show.Id">
+                                    <i class="bi bi-eye-fill"></i> Update Show
+                                </a>
+                                <a class="btn btn-outline-primary float" asp-action="Delete" asp-route-id="@show.Id">
+                                    <i class="bi bi-eye-fill"></i> Delete Show
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

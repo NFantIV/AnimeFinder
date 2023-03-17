@@ -1,0 +1,14 @@
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/bin/Debug/net7.0/AnimeFinder.Data.deps.json
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/bin/Debug/net7.0/AnimeFinder.Data.dll
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/bin/Debug/net7.0/AnimeFinder.Data.pdb
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.csproj.AssemblyReference.cache
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.AssemblyInfoInputs.cache
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.AssemblyInfo.cs
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.csproj.CoreCompileInputs.cache
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.dll
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/refint/AnimeFinder.Data.dll
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.pdb
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/ref/AnimeFinder.Data.dll
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/bin/Debug/net7.0/AnimeFinder.Data.runtimeconfig.json
+/Users/nelsonfantiv/Desktop/Final Project/AnimeFinder.Data/obj/Debug/net7.0/AnimeFinder.Data.genruntimeconfig.cache

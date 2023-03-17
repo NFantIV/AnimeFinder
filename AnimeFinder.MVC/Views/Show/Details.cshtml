@@ -1,0 +1,48 @@
+@model ShowDetail
+
+@{
+    ViewData["Title"] = @Model.Name;
+}
+
+<h1>@Model.Name</h1>
+<h4>Show Details</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model=>model.Id)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model=>model.Id)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model=>model.Name)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model=>model.Name)
+    </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model=>model.Characters)
+    </dt>
+    @* <dd class="col-sm-10">
+        @Html.DisplayFor(model=>model.Characters)
+    </dd> *@
+    <dd class="col-sm-10">
+    @foreach (var c in @Model.Characters)
+    {
+        <h6>@c.Name</h6>
+    }
+    </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model=>model.Genre)
+    </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model=>model.Genre)
+    </dd>
+</dl>
+
+<div>
+    <a asp-action="Index">Back To List</a>
+    <a asp-action="SeasonDetails" asp-controller="Season" asp-route-id="@Model.Id">Season Details</a>
+</div>
+

@@ -1,0 +1,42 @@
+@model ShowEdit
+
+@{
+    ViewData["Title"] = "Update A Show";
+}
+
+<h1>Update A Show</h1>
+<hr />
+
+<div class="row>">
+    <div class="col-md-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="Edit">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+                        <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <select asp-for="Genre" class="form-control" asp-items="@Model.GenresSelection">
+                <option disabled selected> -- select a genre -- </option>
+                </select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+<div class="form-group">
+                <label asp-for="WhereToWatch" class="control-label"></label>
+                <select asp-for="WhereToWatch" class="form-control" asp-items="@Model.WhereToWatchSelection">
+                <option disabled selected> -- Where to Watch-- </option>
+                </select>
+                <span asp-validation-for="WhereToWatch" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+        <div>
+            <a asp-action="Index">Back To List</a>
+        </div>
+    </div>
+</div>
